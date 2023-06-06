@@ -13,9 +13,22 @@
 }
 
 h1{
-    margin: 0 2rem;
+    margin: 0 .7rem;
+    font-size: 3rem;
+    color: blueviolet;
 }
 
 ul{
     margin:  1rem .7rem;
+    list-style-type: none;
+}
+
+li{
+    color: white;
+    background-color: rgba(244, 65, 0, 0.614);
+    text-transform: uppercase;
+    width: 50rem;
+    margin: 1rem 0;
+    padding: .5rem .2rem;
+    border: 3px solid red;
 }
