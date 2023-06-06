@@ -20,7 +20,7 @@
             <h1> My Todo List</h1>
             <div class="list">
                 <ul>
-                    <li v-for = "(toDo, index) in toDoList">
+                    <li :class="mansion" v-for = "(toDo, index) in toDoList" @click="chekingIfDone()">
                         {{ toDo }}
                         <span class="text-end"><i class="fa-solid fa-square-xmark" @click="removeElement(index)"></i></span>
                     </li>

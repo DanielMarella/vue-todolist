@@ -15,14 +15,37 @@ const { createApp } = Vue
         ],
 
         newElement : '',
+        done : false,
+
+
+        mansion : '',
     }
 },
     methods:  {
+
+
 
         addToDoElment (newElement) {
             this.toDoList.push(newElement);
             this.newElement = '';
         },
+
+        chekingIfDone (){
+            console.log(this.done)
+            this.done = true;
+            if(this.done === true){
+                this.mansion = 'active';
+                console.log('ho aggiunto la classe')
+            }else{
+                this.mansion = '';
+                console.log('ho tolto la classe')
+            }
+            console.log(this.done)
+
+
+        },
+
+
 
         removeElement (toDoElementIndex) {
             if(toDoElementIndex >= this.toDoList.length || toDoElementIndex < 0){
@@ -49,7 +72,7 @@ const { createApp } = Vue
 // Stampare all'interno di una lista HTML un item per ogni todo. X Se la proprietà done è uguale a true, visualizzare il testo del todo sbarrato. 
 
 // MILESTONE 2
-// Visualizzare a fianco ad ogni item ha una "x" X: cliccando su di essa, il todo viene rimosso dalla lista.
+// Visualizzare a fianco ad ogni item ha una "x" X: cliccando su di essa, il todo viene rimosso dalla lista.X
 
 // MILESTONE 3
 // Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul pulsante, il testo digitato viene letto e utilizzato per creare un nuovo todo, che quindi viene aggiunto alla lista dei todo esistenti. X
