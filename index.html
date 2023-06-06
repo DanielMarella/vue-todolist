@@ -18,30 +18,18 @@
     <div id="app">
         <div class="container">
             <h1> My Todo List</h1>
-        <div class="list">
-            <ul>
-                <li v-for = "toDo in toDoList">
-                    {{ toDo }}
-                    <span class="text-end"><i class="fa-solid fa-square-xmark"></i></span>
-                </li>
-            </ul>
+            <div class="list">
+                <ul>
+                    <li v-for = "(toDo, index) in toDoList">
+                        {{ toDo }}
+                        <span class="text-end"><i class="fa-solid fa-square-xmark" @click="removeElement(index)"></i></span>
+                    </li>
+                </ul>
+            </div>
+
+            <input type="text" class="addListElemet" v-model="newElement">
+            <button @click="addToDoElment(newElement)">Aggiungi</button>
         </div>
-
-        <input type="text" class="addListElemet" v-model="newElement">
-        <button @click="addToDoElment(newElement)">Aggiungi</button>
-
-        <div class="">
-
-        </div>
-
-        </div>
-
-
-
-
-
-
-
     </div>
 
 
