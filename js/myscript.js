@@ -5,19 +5,25 @@ const { createApp } = Vue
     createApp({
     data() {
         return {
-            
+
         toDoList: [
             'giocare a zelda',
             'controllare se ho i soldi per diablo IV',
             'piangere perchè sono povero e non ho i soldi',
             'creare un bot per generare soldi',
-            'comprare diablo IV'
+            'comprare diablo IV',
         ],
-        
-        
+
+        newElement : '',
     }
+},
+    methods:  {
+
+        addToDoElment (newElement) {
+            this.toDoList.push(newElement);
+        }
 }
-}).mount('#app')
+}).mount('#app');
 
 
 

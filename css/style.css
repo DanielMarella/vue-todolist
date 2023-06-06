@@ -24,6 +24,9 @@ ul{
 }
 
 li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: white;
     background-color: rgba(244, 65, 0, 0.614);
     text-transform: uppercase;
@@ -31,4 +34,23 @@ li{
     margin: 1rem 0;
     padding: .5rem .2rem;
     border: 3px solid red;
+}
+
+i{
+    padding: 0 .7rem;
+    font-size: 2rem;
+    color: blueviolet;
+}
+
+.addListElemet{
+    width: 15rem;
+    height: 2rem;
+    margin:  1rem .7rem;
+}
+
+button{
+    border: 2px solid rgb(255, 17, 255);
+    background-color: rgba(137, 43, 226, 0.517);
+    padding: .5rem;
+    border-radius: 20px;
 }
